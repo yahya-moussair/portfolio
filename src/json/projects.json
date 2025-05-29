@@ -1,23 +1,47 @@
 [
   {
-    "projectName": "My Portfolio",
-    "description": "This is a personal portfolio website built with React showcasing Yahya Moussair's work as a frontend developer. Features a hero section, about page, and projects gallery with responsive design using Tailwind CSS.",
+    "en": {
+      "projectName": "My Portfolio",
+      "description": "This is a personal portfolio website built with React showcasing Yahya Moussair's work as a frontend developer. Features a hero section, about page, and projects gallery with responsive design using Tailwind CSS."
+    },
+    "fr": {
+      "projectName": "Mon Portfolio",
+      "description": "Ceci est un site web portfolio personnel construit avec React présentant le travail de Yahya Moussair en tant que développeur frontend. Comprend une section d'accueil, une page à propos et une galerie de projets avec un design responsive utilisant Tailwind CSS."
+    },
     "demoLink": "https://portfolio-151c.vercel.app/"
   },
   {
-    "projectName": "FashionStore",
-    "description": "This is an e-commerce web application built with React and Vite. Features a FashionHub brand with shopping cart, favorites, user authentication, and product catalog using Fake Store API integration.",
+    "en": {
+      "projectName": "FashionStore",
+      "description": "This is an e-commerce web application built with React and Vite. Features a FashionHub brand with shopping cart, favorites, user authentication, and product catalog using Fake Store API integration."
+    },
+    "fr": {
+      "projectName": "Boutique de Mode",
+      "description": "C'est une application web e-commerce construite avec React et Vite. Propose une marque FashionHub avec panier d'achat, favoris, authentification utilisateur et catalogue de produits utilisant l'intégration de l'API Fake Store."
+    },
     "demoLink": "#"
   },
   {
-    "projectName": "Counter",
-    "description": "A vanilla JavaScript stopwatch application with start/stop/record functionality. Features millisecond precision timing, lap recording, and clean dark UI styling.",
+    "en": {
+      "projectName": "Counter",
+      "description": "A vanilla JavaScript stopwatch application with start/stop/record functionality. Features millisecond precision timing, lap recording, and clean dark UI styling."
+    },
+    "fr": {
+      "projectName": "Chronomètre",
+      "description": "Une application chronomètre en JavaScript vanilla avec des fonctionnalités de démarrage/arrêt/enregistrement. Propose un chronométrage précis à la milliseconde, l'enregistrement des tours et un style d'interface sombre et épuré."
+    },
     "repoLink": "https://github.com/yahya-moussair/counter",
     "demoLink": "#"
   },
   {
-    "projectName": "Hangman Game ",
-    "description": "This captures the essence - it's a Hangman game built with JavaScript. The project is a classic word-guessing game with a clean interface, visual hangman progression, hints, and an on-screen keyboard.",
+    "en": {
+      "projectName": "Hangman Game",
+      "description": "This captures the essence - it's a Hangman game built with JavaScript. The project is a classic word-guessing game with a clean interface, visual hangman progression, hints, and an on-screen keyboard."
+    },
+    "fr": {
+      "projectName": "Jeu du Pendu",
+      "description": "C'est un jeu du pendu construit avec JavaScript. Le projet est un jeu classique de devinettes de mots avec une interface épurée, une progression visuelle du pendu, des indices et un clavier à l'écran."
+    },
     "repoLink": "https://github.com/yahya-moussair/hangman-game",
     "demoLink": "#"
   }
