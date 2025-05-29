@@ -15,7 +15,7 @@ const App = () => {
         <Route path="*" element={<Error />} />
         <Route path="/" element={<Home />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </MyProvider>
   );
 };

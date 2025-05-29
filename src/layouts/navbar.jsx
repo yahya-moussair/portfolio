@@ -11,11 +11,11 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed inset-0 bg-black/50 w-screen h-screen z-50 ${
+        className={`fixed inset-0 bg-black/50 w-full h-screen z-50 ${
           isOpen ? "block" : "hidden"
         }`}
       ></div>
-      <div className="z-50 lg:px-10 px-4 lg:py-3 py-2 bg-gradient-to-r from-[#0f2027]/90 via-[#203a43]/90 to-[#2c5364]/90 backdrop-blur-md fixed lg:w-[100%] w-[95%] left-[50%] translate-x-[-50%] flex items-center justify-between">
+      <div className="z-50 lg:px-10 px-4 lg:py-3 py-2 bg-gradient-to-r from-[#0f2027]/90 via-[#203a43]/90 to-[#2c5364]/90 backdrop-blur-md fixed w-[100%] left-[50%] translate-x-[-50%] flex items-center justify-between">
         <Link to="/">
           <h1 className="text-[3rem] text-white  font-bold font-mono lg:hover:scale-120 transition-all duration-300">
             YMS
