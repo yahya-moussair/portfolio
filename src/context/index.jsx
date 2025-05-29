@@ -1,26 +1,14 @@
-import axios from "axios";
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useState } from "react";
+import projects from "../json/projects.json"
 
 const MyContext = createContext();
 
 const MyProvider = ({ children }) => {
-    const [products, setProducts] = useState();
-
-    useEffect(() => {
-        const getProducts = async () => {
-            try {
-                const response = await axios.get('https://fakestoreapi.com/products');
-                const data = response.data;
-                setProducts(data);
-            } catch (error) {
-                console.error('Error fetching products:', error);
-            }
-        };
-        getProducts();
-    }, []);
+    const [project , setProjet] = useState(projects)
 
     const data = {
-        products,
+        project,
+        setProjet
     };
 
     return (
