@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <>
-      <div className=" lg:px-10 px-0 lg:py-20 py-7 flex lg:flex-row flex-col gap-x-15 lg:gap-y-0 gap-y-10 justify-center items-center z-10 w-[80%] mx-auto">
+      <div id="hero" className=" lg:px-10 px-0 lg:py-20 py-7 flex lg:flex-row flex-col gap-x-15 lg:gap-y-0 gap-y-10 justify-center items-center z-10 w-[80%] mx-auto">
         <div className="lg:w-1/3 rounded-2xl w-full overflow-hidden lg:hover:shadow-2xl/10 lg:hover:shadow-white/100">
           <img
             src={images.heroImg}

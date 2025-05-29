@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import Navbar from "./layouts/navbar";
 import Footer from "./layouts/footer";
 import { MyProvider } from "./context";
+import About from "./components/home/about";
 
 const App = () => {
   return (

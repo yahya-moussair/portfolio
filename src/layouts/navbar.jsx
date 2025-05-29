@@ -30,34 +30,38 @@ const Navbar = () => {
             className="text-2xl absolute top-[10px] right-[10px] lg:hidden block"
             onClick={() => setIsOpen(false)}
           />
-          <Link
-            to="/"
+          <a
+            href="#hero"
+            onClick={() => setIsOpen(false)}
             className="text-xl capitalize relative group"
           >
             home
             <span className="absolute top-[95%] left-0 w-0 bg-white h-[1px] group-hover:w-full transition-all duration-300 lg:block hidden"></span>
-          </Link>
-          <Link
-            to="/about"
+          </a>
+          <a
+            href="#about"
+            onClick={() => setIsOpen(false)}
             className="text-xl capitalize relative group"
           >
             about
             <span className="absolute top-[95%] left-0 w-0 bg-white h-[1px] group-hover:w-full transition-all duration-300 lg:block hidden"></span>
-          </Link>
-          <Link
-            to="/projects"
+          </a>
+          <a
+            href="#projects"
+            onClick={() => setIsOpen(false)}
             className="text-xl capitalize relative group"
           >
             projects
             <span className="absolute top-[95%] left-0 w-0 bg-white h-[1px] group-hover:w-full transition-all duration-300 lg:block hidden"></span>
-          </Link>
-          <Link
-            to="/contact"
+          </a>
+          <a
+            href="#contact"
+            onClick={() => setIsOpen(false)}
             className="text-xl capitalize relative group"
           >
             contact
             <span className="absolute top-[95%] left-0 w-0 bg-white h-[1px] group-hover:w-full transition-all duration-300 lg:block hidden"></span>
-          </Link>
+          </a>
         </nav>
         <div className="flex items-center lg:gap-x-5 gap-x-2 ">
           <Link to="https://github.com/yahya-moussair" target="_blank">
