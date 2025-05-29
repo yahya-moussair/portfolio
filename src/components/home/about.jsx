@@ -55,7 +55,7 @@ const About = () => {
               <a
                 href={resume}
                 download="resume"
-                className="bg-gradient-to-r text-xl cursor-pointer from-cyan-400 to-blue-600 text-white font-semibold w-[65%] text-center py-2  px-1 rounded-lg shadow-md lg:hover:scale-105 transition-transform duration-200"
+                className="text-xl cursor-pointer lg:text-white lg:bg-transparent bg-white text-black border-white font-semibold w-[65%] text-center py-2  px-1 rounded-lg shadow-md lg:hover:scale-105 border-[2px]   lg:hover:bg-white lg:hover:text-black lg:hover:border-white transition-transform duration-200"
               >
                 Download My Resume
               </a>

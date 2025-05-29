@@ -26,12 +26,12 @@ const HeroSection = () => {
           </p>
           <div className="flex lg:flex-row flex-col gap-x-4 lg:gap-y-0 gap-y-3">
             <Link to="/about">
-              <button className="bg-gradient-to-r text-xl cursor-pointer from-cyan-400 to-blue-600 text-white font-semibold py-2 px-15 rounded-lg shadow-md lg:hover:scale-105 transition-transform duration-200">
+              <button className="border-[2px]  text-xl cursor-pointer lg:text-white lg:bg-transparent bg-white text-black border-white font-semibold py-2 px-15 rounded-lg shadow-md lg:hover:scale-105 lg:hover:bg-white lg:hover:text-black w-full transition-transform duration-200">
                 About
               </button>
             </Link>
             <Link to="/project">
-              <button className="bg-gradient-to-r text-xl cursor-pointer from-cyan-400 to-blue-600 text-white font-semibold py-2 px-13 rounded-lg shadow-md lg:hover:scale-105 transition-transform duration-200">
+              <button className="border-[2px]  text-xl cursor-pointer lg:text-white lg:bg-transparent bg-white text-black border-white font-semibold py-2 px-15 rounded-lg shadow-md lg:hover:scale-105 lg:hover:bg-white w-full lg:hover:text-black transition-transform duration-200">
                 Projects
               </button>
             </Link>

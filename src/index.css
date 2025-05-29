@@ -5,8 +5,6 @@ body {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #fff; /* Make sure your text is readable on dark background */
   font-family: "Raleway", sans-serif;
+  user-select: none;
 }
-/* .parentDiv:hover > .chilDiv{
-  bottom: 0;
-} */
 

@@ -65,8 +65,8 @@ const Contact = () => {
   return (
     <>
       <div
-        id="projects"
-        className="flex flex-col gap-y-15 text-center bg-white/10 backdrop-blur-md border border-white/10 shadow-md py-9 lg:px-30 px-3 lg:py-10 z-10 w-full"
+        id="contact"
+        className="flex flex-col gap-y-15 text-center py-9 lg:px-30 px-3 lg:py-10 z-10 w-full"
       >
         <h1 className="text-[3rem] font-bold">Contact</h1>
         <div className="flex lg:flex-row flex-col gap-x-7 gap-y-4 lg:items-start md:px-10">
@@ -123,7 +123,7 @@ const Contact = () => {
             ></textarea>
             <button
               value="send"
-              className="border-[1px] border-white w-full rounded-xl py-2 cursor-pointer hover:bg-white hover:text-black transition-all duration-300"
+              className="border-[1px] border-white w-full rounded-xl py-2 cursor-pointer hover:bg-white hover:text-black font-semibold transition-all duration-300"
             >
               Submit
             </button>
