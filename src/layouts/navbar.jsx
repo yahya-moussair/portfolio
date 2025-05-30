@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { useLanguage } from "../context/LanguageContext";
+import { useAppContext } from "../context";
 
 const navTranslations = {
   en: {
@@ -25,7 +25,7 @@ const navTranslations = {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { language, toggleLanguage } = useLanguage();
+  const { language, toggleLanguage } = useAppContext();
   const t = navTranslations[language];
 
   return (

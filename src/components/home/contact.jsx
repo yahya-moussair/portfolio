@@ -6,13 +6,12 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { Link } from "react-router-dom";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../constants/translations";
+import { useAppContext } from "../../context";
 
 const Contact = () => {
-  const { language } = useLanguage();
+const { language } = useAppContext();
   const t = translations[language].contact;
   const form = useRef();
   const [name, setName] = useState("");

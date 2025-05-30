@@ -8,11 +8,11 @@ import { SiGmail } from "react-icons/si";
 import resume from "../../assets/files/somatosensory.pdf";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../constants/translations";
+import { useAppContext } from "../../context";
 
 const About = () => {
-  const { language } = useLanguage();
+  const { language } = useAppContext();
   const t = translations[language].about;
 
   const socialIconVariants = {

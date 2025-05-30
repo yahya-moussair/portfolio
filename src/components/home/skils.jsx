@@ -11,11 +11,11 @@ import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiGnubash } from "react-icons/si";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../constants/translations";
+import { useAppContext } from "../../context";
 
 const Skils = () => {
-  const { language } = useLanguage();
+  const { language } = useAppContext();
   const t = translations[language].skills;
   const quote = translations[language].about.quote;
 

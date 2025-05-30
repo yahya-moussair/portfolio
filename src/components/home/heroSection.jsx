@@ -3,11 +3,11 @@ import images from "../../constants/images";
 import { Link } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../constants/translations";
+import { useAppContext } from "../../context";
 
 const HeroSection = () => {
-  const { language } = useLanguage();
+  const { language } = useAppContext();
   const t = translations[language].hero;
 
   return (

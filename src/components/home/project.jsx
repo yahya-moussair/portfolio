@@ -1,14 +1,12 @@
 import React from "react";
-import images from "../../constants/images";
 import { useAppContext } from "../../context";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../constants/translations";
+import images from "../../constants/images";
 
 const Project = () => {
-  const { project } = useAppContext();
-  const { language } = useLanguage();
+  const { project , language } = useAppContext();
   const t = translations[language].projects;
 
   const containerVariants = {
@@ -68,7 +66,7 @@ const Project = () => {
               <motion.img
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
-                src={images.easy}
+                src={images.portfolio}
                 alt=""
                 className="lg:rounded-xl rounded-t-xl"
               />
