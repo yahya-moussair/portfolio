@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import resume from "../../assets/files/somatosensory.pdf";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { translations } from "../../constants/translations";
@@ -98,8 +97,9 @@ const About = () => {
               <motion.a
                 whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 1)", color: "#0f2027" }}
                 whileTap={{ scale: 0.95 }}
-                href={resume}
-                download="resume"
+                onClick={() => alert('The resume is currently being prepared and will be available soon.')}
+                // href={resume}
+                // download="resume"
                 className="text-xl cursor-pointer text-white bg-transparent border-white font-semibold w-[65%] text-center py-2 px-1 rounded-lg shadow-md border-[2px] transition-colors duration-200"
               >
                 {t.downloadResume}
