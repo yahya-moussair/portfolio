@@ -1,7 +1,6 @@
 import React from "react";
 import images from "../../constants/images";
 import { Link } from "react-router-dom";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { translations } from "../../constants/translations";
 import { useAppContext } from "../../context";
@@ -65,7 +64,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 1 }}
             className="flex lg:flex-row flex-col gap-x-4 lg:gap-y-0 gap-y-3"
           >
-            <Link to="/about">
+            <a href="#about">
               <motion.button
                 whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 1)", color: "#0f2027" }}
                 whileTap={{ scale: 0.95 }}
@@ -74,8 +73,8 @@ const HeroSection = () => {
               >
                 {t.about}
               </motion.button>
-            </Link>
-            <Link to="/project">
+            </a>
+            <a href="#projects">
               <motion.button
                 whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 1)", color: "#0f2027" }}
                 whileTap={{ scale: 0.95 }}
@@ -84,7 +83,7 @@ const HeroSection = () => {
               >
                 {t.projects}
               </motion.button>
-            </Link>
+            </a >
           </motion.div>
         </motion.div>
       </div>

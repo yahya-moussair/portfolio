@@ -9,7 +9,6 @@ import {
 import { IoLogoJavascript } from "react-icons/io";
 import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiGnubash } from "react-icons/si";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { translations } from "../../constants/translations";
 import { useAppContext } from "../../context";

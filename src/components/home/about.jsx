@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { translations } from "../../constants/translations";
 import { useAppContext } from "../../context";

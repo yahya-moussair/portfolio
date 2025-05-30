@@ -1,6 +1,5 @@
 import React from "react";
 import { useAppContext } from "../../context";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { translations } from "../../constants/translations";
 import images from "../../constants/images";
