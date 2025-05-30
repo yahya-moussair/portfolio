@@ -9,7 +9,7 @@ const Contact = lazy(() => import("../components/home/contact"));
 
 const Home = () => {
     return (
-        <div className="flex flex-col gap-y-20 py-32">
+        <div className="flex flex-col gap-y-20 py-32 overflow-x-hidden">
             <Suspense fallback={<Loading />}>
                 <HeroSection />
             </Suspense>

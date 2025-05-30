@@ -91,7 +91,7 @@ const Skils = () => {
               >
                 {skill.icon}
               </motion.div>
-              <motion.h1 className="lg:text-2xl text-lg font-semibold">
+              <motion.h1 className="lg:text-2xl text-[1rem] font-semibold">
                 {skill.name}
               </motion.h1>
             </motion.div>
@@ -111,7 +111,7 @@ const Skils = () => {
           >
             <FaQuoteLeft className="text-[1rem] text-white/80" />
           </motion.span>
-          <span className="text-[1.1rem] font-semibold">
+          <span className="text-[1.1rem] font-semibold text-center">
             {quote}
           </span>
           <motion.span

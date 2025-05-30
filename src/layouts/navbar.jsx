@@ -13,14 +13,14 @@ const navTranslations = {
     home: "Home",
     about: "About",
     projects: "Projects",
-    contact: "Contact"
+    contact: "Contact",
   },
   fr: {
     home: "Accueil",
     about: "À propos",
     projects: "Projets",
-    contact: "Contact"
-  }
+    contact: "Contact",
+  },
 };
 
 const Navbar = () => {
@@ -35,9 +35,9 @@ const Navbar = () => {
           isOpen ? "block" : "hidden"
         }`}
       ></div>
-      <div className="z-50 lg:px-10 px-4 lg:py-3 py-2 bg-gradient-to-r from-[#0f2027]/90 via-[#203a43]/90 to-[#2c5364]/90 backdrop-blur-md fixed w-[100%] left-[50%] translate-x-[-50%] flex items-center justify-between">
+      <div className="z-50 lg:px-10 px-4 lg:py-3 py-2 bg-gradient-to-r from-[#0f2027]/90 via-[#203a43]/90 to-[#2c5364]/90 backdrop-blur-md fixed w-full left-[50%] translate-x-[-50%] flex items-center justify-between">
         <Link to="/">
-          <motion.h1 
+          <motion.h1
             whileHover={{ scale: 1.05 }}
             className="text-[3rem] text-white font-bold font-mono transition-all duration-300"
           >
@@ -85,6 +85,14 @@ const Navbar = () => {
             {t.contact}
             <span className="absolute top-[95%] left-0 w-0 bg-white h-[1px] group-hover:w-full transition-all duration-300 lg:block hidden"></span>
           </a>
+          <motion.button
+            onClick={toggleLanguage}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="text-xl capitalize lg:px-3 px-5 py-1 border lg:border-white/20 border-black rounded-full lg:bg-white/10 lg:backdrop-blur-md bg-black lg:hover:bg-white lg:hover:text-black transition-colors duration-300 text-white"
+          >
+            {language === "en" ? "FR" : "EN"}
+          </motion.button>
         </nav>
         <div className="flex items-center lg:gap-x-5 gap-x-2">
           <Link to="https://github.com/yahya-moussair" target="_blank">
@@ -108,14 +116,6 @@ const Navbar = () => {
               <FaInstagram className="text-[1.7rem] transition-all duration-300 text-white" />
             </motion.div>
           </Link>
-          <motion.button
-            onClick={toggleLanguage}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="text-xl capitalize px-3 py-1 border border-white/20 rounded-full bg-white/10 backdrop-blur-md hover:bg-white hover:text-black transition-colors duration-300 text-white"
-          >
-            {language === 'en' ? 'FR' : 'EN'}
-          </motion.button>
           <FaBars
             className="text-[1.5rem] text-white lg:hidden"
             onClick={() => setIsOpen(true)}
